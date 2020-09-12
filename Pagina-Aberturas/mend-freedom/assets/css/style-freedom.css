@@ -5429,9 +5429,13 @@ input[type="button"].btn-block {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 50%;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;  
+}
+
+
+
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
@@ -5524,7 +5528,11 @@ input[type="button"].btn-block {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    .navbar-nav{
+      padding-left: 0;
+    }
+  }
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -5544,7 +5552,9 @@ input[type="button"].btn-block {
       display: flex !important;
       flex-basis: auto; }
     .navbar-expand-lg .navbar-toggler {
-      display: none; } }
+      display: none; }
+     
+    }
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
@@ -9551,10 +9561,10 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 :root {
-  --theme-color: #fd484e;
+  --theme-color: #731430;
   --secondary-color: #1e1d24;
-  --theme2-color: #051B35;
-  --text-color: #585858;
+  --theme2-color: #333335;
+  --text-color: #221a1a;
   --title-color: #2c3038;
   --white-color: #ffffff;
   --light-bg-color: #f8f9fa; }
@@ -9806,10 +9816,13 @@ img {
   color: var(--white-color); }
 
 .w3l-bootstrap-header a.navbar-brand span.logo-icon {
-  font-size: 36px; }
+  font-size: 36px;
+}
 
 .w3l-bootstrap-header a.navbar-brand span.logo-let {
-  font-family: 'Pacifico', cursive; }
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+}
 
 .w3l-bootstrap-header a.navbar-brand p {
   font-size: 13px;
@@ -9820,7 +9833,8 @@ img {
 
 .w3l-bootstrap-header a.navbar-brand span.left-logo {
   margin-left: 6px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .w3l-bootstrap-header a:hover {
   opacity: 1; }
@@ -11159,7 +11173,7 @@ button.owl-next {
     line-height: 40px; } }
 
 .w3l-footer-16 .w3l-footer-16-main {
-  background: #051B35;
+  background: #333335;
   padding: 4em 0; }
 
 .w3l-footer-16 .w3l-footer-16-main h3 {
