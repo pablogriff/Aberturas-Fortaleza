@@ -14017,8 +14017,9 @@ footer{
 	background-color: #333335;
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
 	padding: 50px 50px 60px 50px;
 	margin-top: 80px;
 }
@@ -14037,19 +14038,17 @@ footer{
 }
 
 .footer-distributed h3{
-	color:  #ffffff;
+  color:  #ffffff;
+  font-family: 'Pacifico', sans-serif;
 	font-size:36px ;
 	margin: 0;
 }
-
-/* The company logo */
-
-.footer-distributed .footer-left img{
-	width: 30%;
-}
-
-.footer-distributed h3 span{
-	color:  #e0ac1c;
+.footer-distributed span.arrow-button{
+  color:  #d2d2d2;
+  font-family: 'Carousel', sans-serif;
+  font-size: 16px ;
+  font-weight: 400;
+	margin: 7em;
 }
 
 /* Footer links */
@@ -14100,7 +14099,8 @@ footer{
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+  color: #ffffff;
+  font-weight: bold;
 	vertical-align: middle;
 	margin:0;
 }
@@ -14117,6 +14117,9 @@ footer{
 	text-decoration: none;;
 }
 
+.footer-distributed .footer-center p.phone{
+  font-weight: normal;
+}
 
 /* Footer Right */
 
