@@ -477,92 +477,81 @@
 <!-- //subscribe -->
 <!-- footer -->
 <section class="w3l-footer-16">
-  <div class="w3l-footer-16-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="row">
-            <div class="col-lg-8 col-md-6 col-7 column pr-lg-0">
-              <a class="logo" href="index.html"><span class="fa fa-window-restore logo-icon"
-                  aria-hidden="true"></span><span class="ml-2"><span class="logo-let">La Fortaleza</span><p>
-                    Aberturas</p></span></a></a>
-              <p class="mt-4">Si nos pagas te regalamos las ventanas </p>
-            </div>
-            <div class="col-lg-4 col-md-6 col-5 column pr-lg-0">
-              <h3>Pages</h3>
-              <ul class="footer-gd-16">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Productos</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 column column4 mt-lg-0 mt-4">
-          <h3><a href="contact.html">Contacto</a> </h3>
-          <ul>
-            <li><a href="contact.html">mail</a></li>
-            <li><a href="contact.html">tel</a></li>
-            <li><a href="contact.html">boca yo te amo</a></li>
-          </ul>
-        </div>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+      <h3>La Fortaleza</h3> 
+      <span class="arrow-button">Aberturas</span>
+
+      <p class="footer-links">
+        <a href="index.html">Inicio</a>
+        |
+        <a href="about.html">Nosotros</a>
+        |
+        <a href="services.html">Productos</a>
+      </p>
+
+      <p class="footer-company-name">© 2020 La Fortaleza Aberturas Tandil Buenos Aires Argentina</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> 14 de Julio 323</span>
+          Tandil, Buenos Aires - 7000</p>
       </div>
-      <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
-        <div class="columns text-left">
-          <p>@ 2020 Mend. All rights reserved.
-          </p>
-        </div>
-        <div class="columns-2 mt-md-0 mt-3">
-          <ul class="social">
-            <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-            </li>
-            <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-            </li>
-            <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-            </li>
-            <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-            </li>
-            <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
-            </li>
-          </ul>
-        </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p class="phone">+91 22-27782183</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#">mail@gmail.com</a></p>
       </div>
     </div>
-  </div>
-
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Contacto</span>
+        Podes encontrarnos en las siguientes redes
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
   <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-      scrollFunction()
-    };
+<button onclick="topFunction()" id="movetop" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("movetop").style.display = "block";
-      } else {
-        document.getElementById("movetop").style.display = "none";
-      }
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
     }
+  }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <!-- //move top -->
-  <script>
-    $(function () {
-      $('.navbar-toggler').click(function () {
-        $('body').toggleClass('noscroll');
-      })
-    });
-  </script>
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- //move top -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+     
 </section>
 <!-- //footer -->
 </body>
