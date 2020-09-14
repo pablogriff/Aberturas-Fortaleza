@@ -17801,16 +17801,42 @@ footer h3 {
   font-size: 21px;
 }
 
-#design-logo {
+#design-logo-arriba, #design-logo-abajo {
   font-size: 17px;
   letter-spacing: 0.191em;
   line-height: 97px;
+}
+
+#design-logo-abajo{
+  display:none;
 }
 
 #web0-logo {
   font-size: 18px;
   font-style: italic;   
   font-weight: 700;
-  letter-spacing: 0px;
+  letter-spacing: 0px; 
+  color:#d2d2d2;
 }
+ /* responsive code footer*/
 
+ @media screen and (max-width:767px){
+   footer > *{
+     flex: 1 100%;
+   }
+   footer{
+     align-content: space-around;
+    }
+   footer, footer h3{
+     text-align: center;
+   }
+   #design-logo-arriba{
+     display: none;
+   }
+   #design-logo-abajo{
+     display: block;
+   }
+   .footer-center h3{
+    margin-top: 25px;
+   }
+ }
