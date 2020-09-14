@@ -294,81 +294,81 @@
 <!-- team block -->
 <!-- footer -->
 <section class="w3l-footer-16">
-  <footer class="footer-distributed">
+  <footer>
 
-    <div class="footer-left">
-      <h3>La Fortaleza</h3> 
-      <span class="arrow-button">Aberturas</span>
-
-      <p class="footer-links">
-        <a href="index.html">Inicio</a>
-        |
-        <a href="about.html">Nosotros</a>
-        |
-        <a href="services.html">Productos</a>
-      </p>
-
-      <p class="footer-company-name">© 2020 La Fortaleza Aberturas Tandil Buenos Aires Argentina</p>
-    </div>
-
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span> 14 de Julio 323</span>
-          Tandil, Buenos Aires - 7000</p>
+    <section class="footer-left">
+      <div class="footer-logo">
+        <h3 id="fortaleza-logo">La Fortaleza</h3>
+        <span id="aberturas-logo">Aberturas</span>
       </div>
+      <div class="creadores">
 
-      <div>
-        <i class="fa fa-phone"></i>
-        <p class="phone">+91 22-27782183</p>
+        <p id="design-logo-arriba">Designed by <span id="web0-logo">Web0</span></p>
       </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="#">mail@gmail.com</a></p>
-      </div>
-    </div>
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>Contacto</span>
-        Podes encontrarnos en las siguientes redes
-      </p>
-      <div class="footer-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-youtube"></i></a>
-      </div>
+    </section>
+
+    <section class="footer-center">
+      <h3>Sitios</h3>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Nosotros</a></li>
+        <li><a href="services.html">Productos</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-right">
+      <h3>Contacto</h3>
+      <ul>
+        <li>
+          <i class="fa fa-map-marker"></i>
+          <span>4 de abril 323, Tandil, Argentina</span>
+        </li>
+        <li>
+          <i class="fa fa-phone"></i>
+          <span class="phone-number">+54 2494xxxxxx</span>
+        </li>
+        <li>
+          <i class="fa fa-envelope"></i>
+          <a href="#">mail@mail.com</a>
+        </li>
+      </ul>
+      <p id="design-logo-abajo">Designed by <span id="web0-logo">Web0</span></p>
+    </section>
+  </footer>
+
   <!-- move top -->
-<button onclick="topFunction()" id="movetop" title="Go to top">
-  <span class="fa fa-angle-up"></span>
-</button>
-<script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction()
-  };
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("movetop").style.display = "block";
-    } else {
-      document.getElementById("movetop").style.display = "none";
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
     }
-  }
 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-<!-- //move top -->
-<script>
-  $(function () {
-    $('.navbar-toggler').click(function () {
-      $('body').toggleClass('noscroll');
-    })
-  });
-</script>
-     
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- //move top -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+
 </section>
 <!-- //footer -->
 </body>
