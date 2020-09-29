@@ -17797,14 +17797,6 @@ footer h3 {
 
 /*Logo*/
 
-#logo-icono {
-  font-size: 35px;
-  display: inline-block;
-  font-family: FontAwesome;
-  color: #FFFFFF;
-  margin-right: 5px;
-}
-
 #fortaleza-logo {
   font-size: 35px;
 }
@@ -17812,7 +17804,7 @@ footer h3 {
 #aberturas-logo {
   line-height: 14px;
   font-size: 15px;
-  margin: 0 47px;
+  margin: 0 70px;
 }
 
 #design-logo-arriba, #design-logo-abajo {
@@ -17860,14 +17852,12 @@ footer h3 {
 
 .navbar {
   min-height: 90px;
+  
 }
 
 .nav-item a {
   border-radius: var(--radio, 12px);
 }
-
-/*buttons customization*/
-
 button, .button, .button.raised {
   border-radius: var(--radio, 12px);
 }
@@ -17876,10 +17866,20 @@ button, .button, .button.raised {
 
 @media screen and (max-width:767px) {
   .w3l-bootstrap-header a.navbar-brand span.logo-let {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 8px;
   }
   .w3l-bootstrap-header a.navbar-brand p {
     font-size: 14px;
   }
+}
+
+.imglogo{
+  overflow:hidden;
+  display: inline-block;
+  width: 70px;  
+  height: 70px;
+}
+.imglogo img{
+  height: 84px;
 }
