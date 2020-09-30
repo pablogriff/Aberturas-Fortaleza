@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>proximamente </title>
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-freedom.css">
+  </head>
+  <body>
+<!-- comingsoon-section -->
+<section class="w3l-coming-soon-page">
+  <div class="coming-page-info-6">
+    <div class="container">
+      <adiv class="coming-block">
+        <h1>Proximamente/h1>
+        <p>Va a haber algo muy bueno</p>
+        <div class="countdown">
+          <div class="countdown__days">
+            <div class="number"></div>
+	    <span class>Días</span>
+          </div>
+
+          <div class="countdown__hours">
+            <div class="number"></div>
+            <span class>Horas</span>
+          </div>
+
+          <div class="countdown__minutes">
+            <div class="number"></div>
+            <span class>Minutos</span>
+          </div>
+
+          <div class="countdown__seconds">
+            <div class="number"></div>
+            <span class>Segundos</span>
+          </div>
+        </div>
+        <a class="button raised hoverable" href="index.html">
+          <div class="anim"></div><span>Back to Home</span>
+</a>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script>
+    (() => {
+      // Specify the deadline date
+      const deadlineDate = new Date('October 13, 2020 23:59:59').getTime();
+
+      // Cache all countdown boxes into consts
+      const countdownDays = document.querySelector('.countdown__days .number');
+      const countdownHours = document.querySelector('.countdown__hours .number');
+      const countdownMinutes = document.querySelector('.countdown__minutes .number');
+      const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+      // Update the count down every 1 second (1000 milliseconds)
+      setInterval(() => {
+        // Get current date and time
+        const currentDate = new Date().getTime();
+
+        // Calculate the distance between current date and time and the deadline date and time
+        const distance = deadlineDate - currentDate;
+
+        // Calculations the data for remaining days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Insert the result data into individual countdown boxes
+        countdownDays.innerHTML = days;
+        countdownHours.innerHTML = hours;
+        countdownMinutes.innerHTML = minutes;
+        countdownSeconds.innerHTML = seconds;
+      }, 1000);
+    })();
+  </script>
+
+</section>
+<!-- //comingsoon-section -->
+</body>
+
+</html>
