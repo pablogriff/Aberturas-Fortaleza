@@ -15343,7 +15343,7 @@ button.owl-next {
 }
 
 .w3l-coming-soon-page .coming-page-info-6 {
-  background: url(../images/bg2.jpg) no-repeat center;
+  background-color: var(--theme-color);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15403,7 +15403,6 @@ button.owl-next {
 .w3l-coming-soon-page p {
   color: #fff;
   opacity: 0.9;
-  text-transform: capitalize;
   font-size: 14px;
   letter-spacing: .5px;
   margin: 10px 0 30px;
