@@ -17729,7 +17729,7 @@ footer h3 {
   display: block;
   color: #ffffff;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -17771,17 +17771,8 @@ footer h3 {
 
 /*Left footer section*/
 
-.footer-left h3 {
-  font-family: 'Pacifico', sans-serif;
-  font-size: 36px;
-  margin: 0;
-}
 
-.footer-left span {
-  color: #d2d2d2;
-  font-family: 'Carousel', sans-serif;
-  font-size: 16px;
-}
+
 
 .footer-left {
   display: flex;
@@ -17798,11 +17789,15 @@ footer h3 {
 
 #fortaleza-logo {
   font-size: 35px;
+  font-family: 'Pacifico', sans-serif;
+  color: #fff;
+  margin: 0;
 }
 
 #aberturas-logo {
-  line-height: 14px;
   font-size: 15px;
+  color: #d2d2d2;
+  font-family: 'Carousel', sans-serif;
 }
 
 #design-logo-arriba, #design-logo-abajo {
@@ -17823,9 +17818,7 @@ footer h3 {
   color: #d2d2d2;
 }
 
-.footer-logo .logo-text{
-  
-}
+
 
 /* responsive code footer*/
 
@@ -17839,6 +17832,11 @@ footer h3 {
   footer, footer h3 {
     text-align: center;
   }
+  
+  .footer-left{
+    align-items: center;
+  }
+
   #design-logo-arriba {
     display: none;
   }
@@ -17854,7 +17852,6 @@ footer h3 {
 
 .navbar {
   min-height: 90px;
-  
 }
 
 .nav-item a {
@@ -17874,6 +17871,18 @@ button, .button, .button.raised {
   .w3l-bootstrap-header a.navbar-brand p {
     font-size: 14px;
   }
+}
+
+.footer-left .footer-logo, .nav-logo{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.footer-left .footer-logo .logo-text{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
 }
 
 .imglogo{
