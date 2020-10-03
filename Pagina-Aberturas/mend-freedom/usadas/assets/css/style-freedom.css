@@ -17803,7 +17803,6 @@ footer h3 {
 #aberturas-logo {
   line-height: 14px;
   font-size: 15px;
-  margin: 0 70px;
 }
 
 #design-logo-arriba, #design-logo-abajo {
@@ -17822,6 +17821,10 @@ footer h3 {
   font-weight: 700;
   letter-spacing: 0px;
   color: #d2d2d2;
+}
+
+.footer-logo .logo-text{
+  
 }
 
 /* responsive code footer*/
@@ -17876,8 +17879,7 @@ button, .button, .button.raised {
 .imglogo{
   overflow:hidden;
   display: inline-block;
-  width: 70px;  
-  height: 70px;
+  width: 80px;  
 }
 .imglogo img{
   height: 84px;
