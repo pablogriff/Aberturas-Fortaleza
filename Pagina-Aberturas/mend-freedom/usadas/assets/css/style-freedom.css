@@ -17901,3 +17901,9 @@ button, .button, .button.raised {
 .imglogo img{
   height: 84px;
 }
+
+.proveedor{
+  max-width: 200px;
+  height: 80px;
+}
+
