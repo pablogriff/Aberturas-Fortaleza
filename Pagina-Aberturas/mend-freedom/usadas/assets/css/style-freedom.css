@@ -17907,3 +17907,20 @@ button, .button, .button.raised {
   height: 80px;
 }
 
+/*frase productos*/
+
+.frase{
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.frase-container{
+  width: 50%;
+
+}
+
+.contenedor{
+  display:flex;
+  justify-content: center;
+}
