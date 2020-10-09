@@ -12750,6 +12750,7 @@ img {
   -o-background-size: cover;
   -ms-background-size: cover;
 }
+
 .w3l-main-slider .banner-top1:before, .w3l-main-slider .banner-top2:before, .w3l-main-slider .banner-top3:before, .w3l-main-slider .banner-top4:before {
   content: "";
   background: linear-gradient(to right, rgba(8, 8, 8, 0.57), rgba(8, 8, 8, 0));
@@ -17779,9 +17780,6 @@ footer h3 {
 
 /*Left footer section*/
 
-
-
-
 .footer-left {
   display: flex;
   flex-flow: column;
@@ -17826,8 +17824,6 @@ footer h3 {
   color: #d2d2d2;
 }
 
-
-
 /* responsive code footer*/
 
 @media screen and (max-width:767px) {
@@ -17840,11 +17836,9 @@ footer h3 {
   footer, footer h3 {
     text-align: center;
   }
-  
-  .footer-left{
+  .footer-left {
     align-items: center;
   }
-
   #design-logo-arriba {
     display: none;
   }
@@ -17865,6 +17859,7 @@ footer h3 {
 .nav-item a {
   border-radius: var(--radio, 12px);
 }
+
 button, .button, .button.raised {
   border-radius: var(--radio, 12px);
 }
@@ -17881,46 +17876,100 @@ button, .button, .button.raised {
   }
 }
 
-.footer-left .footer-logo, .nav-logo{
+.footer-left .footer-logo, .nav-logo {
   display: flex;
   flex-flow: row;
   align-items: center;
 }
 
-.footer-left .footer-logo .logo-text{
+.footer-left .footer-logo .logo-text {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
 }
 
-.imglogo{
-  overflow:hidden;
+.imglogo {
+  overflow: hidden;
   display: inline-block;
-  width: 80px;  
+  width: 80px;
 }
-.imglogo img{
+
+.imglogo img {
   height: 84px;
 }
 
-.proveedor{
+.proveedor {
   max-width: 200px;
   height: 80px;
 }
 
 /*frase productos*/
 
-.frase{
+.frase {
   text-align: center;
   font-size: 1.5em;
   font-style: italic;
 }
 
-.frase-container{
+.frase-container {
   width: 50%;
-
 }
 
-.contenedor{
-  display:flex;
+.contenedor {
+  display: flex;
   justify-content: center;
+}
+
+/* Modalbox productos */
+
+.modal-box-button {
+  border: none;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: var(--white);
+  max-height: 90%;
+  padding: 3em;
+  overflow: auto;
+  font: inherit;
+  width: 80%;
+}
+
+.modal-content h4, .modal-content h5 {
+  line-height: 1.6em;
+}
+
+.modal-content p {
+  margin-left: 0.5em;
+}
+
+.modal-content ul {
+  margin-left: 2em;
+}
+
+@media screen and (max-width:767px) {
+  .modal-content h4, .modal-content h5 {
+    padding-top: 0.4em;
+  }
+  .modal-content {
+    padding: 1.3em 0.5em;
+  }
 }
