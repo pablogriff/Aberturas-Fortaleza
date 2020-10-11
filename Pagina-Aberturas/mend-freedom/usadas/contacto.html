@@ -108,15 +108,14 @@
         <h3 class="title-main title-2">Escribinos</h3>
         <p class="sub-title">Proyectos nuevos, refacciones o alguna consulta. Contactanos y responderemos
           lo antes posible. Completá el formulario con tus datos y tus ideas.</p>
-        <form action="#" method="post" class="main-input">
+        <form action="contact-form-handler.php" method="post" class="main-input">
           <div class="top-inputs d-grid">
-            <input type="text" placeholder="Nombre" name="w3lName" id="w3lName" required="">
+            <input type="text" placeholder="Nombre" name="name" id="name" required="">
             <input type="email" name="email" placeholder="Correo" id="w3lSender" required="">
           </div>
-          <input type="text" placeholder="Número de teléfono" name="w3lName" id="w3lName" required="">
-          <textarea placeholder="Mensaje" name="w3lMessage" id="w3lMessage" required=""></textarea>
+          <textarea placeholder="Mensaje" name="message" id="w3lMessage" required=""></textarea>
           <div class="d-flex">
-            <button type="subnmit" class="button raised hoverable  ml-auto">
+            <button type="submit" class="button raised hoverable  ml-auto">
               <div class="anim"></div><span>Enviar Mensaje</span>
             </button>
           </div>
