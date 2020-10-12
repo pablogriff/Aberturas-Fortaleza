@@ -14071,7 +14071,7 @@ button.owl-next {
   font-size: 18px;
   line-height: 25px;
   padding: 0;
-  text-transform: capitalize;
+  
 }
 
 .w3l-footer-16 .below-section, .w3l-footer-16 .para-content-footer {
@@ -16661,7 +16661,7 @@ button.owl-next {
 .w3l-services-1 .service-info {
   text-align: center;
   padding: 30px 20px 40px;
-  border: none;
+  border: noneFF;
   border-width: 0px 1px 1px;
   background: #fff;
 }
@@ -17982,4 +17982,10 @@ button, .button, .button.raised {
   .modal-content {
     padding: 1.3em 0.5em;
   }
+}
+
+/* contact page*/
+
+#facebook-contacto, #mail-contacto{
+  color: var(--theme-color);
 }
