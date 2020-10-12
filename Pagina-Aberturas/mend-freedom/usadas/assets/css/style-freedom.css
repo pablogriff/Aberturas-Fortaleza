@@ -16661,7 +16661,7 @@ button.owl-next {
 .w3l-services-1 .service-info {
   text-align: center;
   padding: 30px 20px 40px;
-  border: 1px solid #eee;
+  border: none;
   border-width: 0px 1px 1px;
   background: #fff;
 }
@@ -17922,8 +17922,18 @@ button, .button, .button.raised {
 
 /* Modalbox productos */
 
+
+.modal-box-button:hover {
+  box-shadow: -1px 2px 22px -9px rgba(0, 0, 0, 0.41);
+  transition: 0.3s ease-in;
+}
+
 .modal-box-button {
-  border: none;
+  box-shadow: -1px 2px 12px -9px rgba(0, 0, 0, 0.41);
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+  border: 1px solid #eee;
+  background: #fff;
 }
 
 /* The Modal (background) */
